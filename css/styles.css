@@ -83,12 +83,19 @@ h2 {
 .center-text {
  text-align: center;
 }
+
 .flex-wrap {
  display: flex;
 }
 .flex-center {
  justify-content: center;
  align-items: center;
+}
+
+@media only screen and ( max-width: 600px){
+ .flex-center {
+  flex-direction: column;
+ }
 }
 .section-1 {
  background-color: #e63946;
@@ -101,15 +108,33 @@ h2 {
  padding: 1rem;
  color: #f9f9f9;
 }
-
+@media only screen and ( max-width: 600px){
+ .paragraph {
+  width: auto;
+ }
+}
 .spacing {
  align-items: center;
  justify-content: center;
+}
+
+@media only screen and ( max-width: 600px){
+ .spacing {
+  flex-direction: column;
+ }
 }
 .width {
  max-width: 50vw;
  margin: 0 auto;
 }
+
+@media only screen and ( max-width: 600px){
+ .width {
+  max-width: 80vw;
+ }
+}
+
+@media only screen and ( max-width: 600px){
 .padding-left {
  padding-left: 5rem;
 }
@@ -124,7 +149,7 @@ h2 {
  padding: 1rem;
 }
 
-.image-style-tw0 {
+.image-style-two {
  max-width: 80%;
 }
  /* about section */
@@ -134,6 +159,12 @@ h2 {
  align-items: center;
  background-color: #f9f9f9;
  height: 40vh;
+}
+@media only screen and ( max-width: 600px){
+ .about-section{
+  height: auto;
+  margin: 1rem;
+ }
 }
 .about-section-div {
  background: #ccc;
@@ -147,6 +178,16 @@ h2 {
  border: 2px solid #fff;
 
 }
+
+@media only screen and ( max-width: 600px){
+ .about-section-div {
+  width: auto;
+ }
+}
+
+
+
+
 .about-container {
  color: #f9f9f9;
     padding: 2rem;
@@ -188,7 +229,12 @@ h2 {
     position: relative;
     
 }
+@media only screen and ( max-width: 600px){
+ .detail-1 {
 
+  height: auto;
+ }
+}
 .detail-1:before {
  content: '';
  position: absolute;
@@ -217,6 +263,13 @@ h2 {
     line-height: 2.5;
     font-size: 2.1rem;
 }
+
+@media only screen and ( max-width: 600px){
+ .detail-container p {
+  width: auto;
+  padding: 2rem;
+ }
+}
 .text-style-bold {
  font-size: 120%;
  color: #e63946;
@@ -236,6 +289,12 @@ h2 {
 
 #three img {
  width: 50vw;
+}
+
+@media only screen and ( max-width: 600px){
+ #three img {
+  width: 80vw;
+ }
 }
 #four {
  background: #333;
@@ -284,6 +343,13 @@ h2 {
  width: 20vw;
  margin: 5rem auto;
 }
+
+@media only screen and ( max-width: 600px){
+ #five .image-container {
+  width: 50vw;
+ 
+ }
+}
 #six {
  background:#e63946;
  padding: 5rem 0;
@@ -308,6 +374,12 @@ h2 {
  margin: 3rem auto;
  padding: 3rem;
 
+}
+
+@media only screen and ( max-width: 600px){
+ .form-container {
+  width: 80vw;
+ }
 }
 .form-container p {
  font-size: 4rem;
